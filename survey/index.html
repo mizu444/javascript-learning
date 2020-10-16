@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">
+        Anketa
+      </h1>
+      <p id="description">
+        Vyplň anketu bo dostaneš!
+      </p>
+      <form id="survey-form" class="form-container">
+        <div class="input-field">
+          <label class="input-label" for="name" id="name-label">Meno</label>
+          <input id="name" required placeholder="Sem napíš meno" />
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Sem napíš email"
+          />
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="number" id="number-label">Vek</label>
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="99"
+            placeholder="Sem napíš vek"
+          />
+        </div>
+
+        <div class="input-field">
+          <label class="input-label" for="dropdown">Vyber Bula roka:</label>
+          <select id="dropdown">
+            <option value="mojsej">Mojsej</option>
+            <option value="norika">Norika</option>
+            <option value="versace">Versace</option>
+            <option value="dangl">Dangl</option>
+          </select>
+        </div>
+
+        <div class="input-field">
+          <p class="input-label">Si chuj?</p>
+          <div>
+            <input type="radio" id="hej" name="name" value="hej" />
+            <label for="hej">Hej</label>
+          </div>
+          <div>
+            <input type="radio" id="ňe" name="name" value="ňe" />
+            <label for="ňe">Ňe</label>
+          </div>
+          <div>
+            <input type="radio" id="neviem" name="name" value="neviem" />
+            <label for="neviem">Neviem</label>
+          </div>
+        </div>
+
+        <div class="input-field">
+          <p class="input-label">Vyber najdôležitejšie vlastnosti Bula roka</p>
+          <div>
+            <input type="checkbox" id="debil" name="vlastnosti" value="debil" />
+            <label for="debil">Je debil</label>
+          </div>
+          <div>
+            <input type="checkbox" id="gadzo" name="vlastnosti" value="gadzo" />
+            <label for="gadzo">Je gadžo</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="neviecitat"
+              name="vlastnosti"
+              value="neviecitat"
+            />
+            <label for="neviecitat">Nevie čítať</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="celebrita"
+              name="vlastnosti"
+              value="celebrita"
+            />
+            <label for="celebrita">Nazýva sa celebritou</label>
+          </div>
+        </div>
+        <div class="input-field">
+          <label class="input-label" for="poznamky">Debilné poznámky</label>
+          <textarea id="poznamky" name="poznamky"></textarea>
+        </div>
+        <input id="submit" type="submit" value="Ta odošli" />
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
